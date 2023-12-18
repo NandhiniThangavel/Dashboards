@@ -9,7 +9,7 @@ create or replace package pkg_sp_sf_update is
 
   
 end pkg_sp_sf_update;
-
+/
 create or replace package body pkg_sp_sf_update is
   procedure SP_SALARY_UPDATE(i_salary in number,
                              i_fname  in varchar2,
@@ -31,4 +31,5 @@ create or replace package body pkg_sp_sf_update is
     open o_cursor for select id,fname,salary from person1;
     
   end SP_SALARY_UPDATE; 
-
+end pkg_sp_sf_update;
+/
