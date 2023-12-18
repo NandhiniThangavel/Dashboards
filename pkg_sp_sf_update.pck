@@ -31,5 +31,4 @@ create or replace package body pkg_sp_sf_update is
     open o_cursor for select id,fname,salary from person1;
     
   end SP_SALARY_UPDATE; 
-end pkg_sp_sf_update;
-/
+
