@@ -25,8 +25,7 @@ create or replace package body pkg_sp_sf_update is
     Update person1 set salary = i_salary where Upper(fname) = Upper(i_fname);
     commit;
     o_msg :='updated';
-  ELSE 
-    o_msg:='name not exists';
+
     end if;  
     open o_cursor for select id,fname,salary from person1;
     
